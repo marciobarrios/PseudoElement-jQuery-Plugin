@@ -5,3 +5,5 @@ You need jQuery to run this plugin, to initialize the plugin:
 $("[class*=pseudoelement]").pseudoElement();
 
 I find for .pseudoelement nodes, you can use .pseudoelement-before/.pseudoelement-after/.pseudoelement-before-after to indicate where we need to add these "pseudo-elements" (you can customize this classes in the default settings). I recommend using the live plugin to only init the plugin one time across all the platform (if you're using a lot of AJAX calls).
+
+You can see a live example here (workin both IE7 with this plugin and modern browsers with CSS generated content): http://jsfiddle.net/hunab/qChf6/
