@@ -1,0 +1,7 @@
+I needed to provide a fallback for <IE7 to create pseudo-elements to generate text + icons with big sprites (we can call it "background-cropping" with pseudo-elements). It's a very good approach because you can use big sprites without problems of overlaping backgrounds.
+
+You need jQuery to run this plugin, to initialize the plugin:
+
+$("[class*=pseudoelement]").pseudoElement();
+
+I find for .pseudoelement nodes, you can use .pseudoelement-before/.pseudoelement-after/.pseudoelement-before-after to indicate where we need to add these "pseudo-elements" (you can customize this classes in the default settings). I recommend using the live plugin to only init the plugin one time across all the platform (if you're using a lot of AJAX calls).
